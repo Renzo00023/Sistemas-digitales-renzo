@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultado</title>
+</head>
+<body>
+    <?php
+    $nombre = $_REQUEST["nombre"];
+    $nivel = $_REQUEST["nivel"];
+
+    echo "Nombre: " . $nombre . "<br>";
+    echo "Nivel de estudio: " . $nivel;
+    ?>
+</body>
+</html>
