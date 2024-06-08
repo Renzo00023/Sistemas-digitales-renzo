@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de Deuda</title>
+</head>
+<body>
+    <form action="punto4.php" method="post">
+        Nombre: <input type="text" name="nombre"><br>
+        Monto adeudado:<br>
+        <select name="deuda">
+            <option value="1-1000">1-1000</option>
+            <option value="1001-10000">1001-10000</option>
+            <option value=">10000">Más de 10000</option>
+        </select><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
