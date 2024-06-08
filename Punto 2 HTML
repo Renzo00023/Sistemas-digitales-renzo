@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de Nivel de Estudio</title>
+</head>
+<body>
+    <form action="punto2.php" method="post">
+        Nombre: <input type="text" name="nombre"><br>
+        Nivel de estudio:<br>
+        <input type="radio" name="nivel" value="Primarios"> Primarios<br>
+        <input type="radio" name="nivel" value="Secundarios"> Secundarios<br>
+        <input type="radio" name="nivel" value="Terciario"> Terciario<br>
+        <input type="radio" name="nivel" value="Universitario"> Universitario<br>
+        <input type="radio" name="nivel" value="Sin estudios"> Sin estudios<br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
