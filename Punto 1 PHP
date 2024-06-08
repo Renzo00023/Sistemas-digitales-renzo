@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultado</title>
+</head>
+<body>
+    <?php
+    $nombre = $_REQUEST["nombre"];
+    $edad = $_REQUEST["edad"];
+
+    echo "Nombre: " . $nombre . "<br>";
+    if ($edad < 18) {
+        echo "Es menor de edad.";
+    } else {
+        echo "Es mayor de edad.";
+    }
+    ?>
+</body>
+</html>
