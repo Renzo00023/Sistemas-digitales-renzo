@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de suscripción</title>
+</head>
+<body>
+    <form action="" method="post">
+        Nombre: <input type="text" name="nombre"><br>
+        Apellido: <input type="text" name="apellido"><br>
+        Edad: <input type="text" name="edad"><br>
+        DNI: <input type="text" name="dni"><br>
+        Fecha de Nacimiento: <input type="date" name="fecha_nacimiento"><br>
+        Género: 
+        <select name="genero">
+            <option value="Masculino">Masculino</option>
+            <option value="Femenino">Femenino</option>
+            <option value="Otro">Otro</option>
+        </select><br>
+        Lugar de Nacimiento: <input type="text" name="lugar_nacimiento"><br>
+        Dirección: <input type="text" name="direccion"><br>
+        Intereses/Hobbies: <textarea name="intereses"></textarea><br>
+        Comentarios: <textarea name="comentarios"></textarea><br>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <?php
+    $nombre = $_REQUEST["nombre"];
+    $apellido = $_REQUEST["apellido"];
+    $edad = $_REQUEST["edad"];
+    $dni = $_REQUEST["dni"];
+    $fecha_nacimiento = $_REQUEST["fecha_nacimiento"];
+    $genero = $_REQUEST["genero"];
+    $lugar_nacimiento = $_REQUEST["lugar_nacimiento"];
+    $direccion = $_REQUEST["direccion"];
+    $intereses = $_REQUEST["intereses"];
+    $comentarios = $_REQUEST["comentarios"];
+
+    if ($nombre && $apellido && $edad && $dni && $fecha_nacimiento && $genero && $lugar_nacimiento && $direccion && $intereses && $comentarios) {
+        echo "Nombre: " . $nombre . "<br>";
+        echo "Apellido: " . $apellido . "<br>";
+        echo "Edad: " . $edad . "<br>";
+        echo "DNI: " . $dni . "<br>";
+        echo "Fecha de Nacimiento: " . $fecha_nacimiento . "<br>";
+        echo "Género: " . $genero . "<br>";
+        echo "Lugar de Nacimiento: " . $lugar_nacimiento . "<br>";
+        echo "Dirección: " . $direccion . "<br>";
+        echo "Intereses/Hobbies: " . $intereses . "<br>";
+        echo "Comentarios: " . $comentarios . "<br>";
+    }
+    ?>
+</body>
+</html>
