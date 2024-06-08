@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de Suscripción</title>
+</head>
+<body>
+    <form action="punto5.php" method="post">
+        Nombre: <input type="text" name="nombre"><br>
+        Apellido: <input type="text" name="apellido"><br>
+        Edad: <input type="text" name="edad"><br>
+        DNI: <input type="text" name="dni"><br>
+        Fecha de Nacimiento: <input type="date" name="fecha_nacimiento"><br>
+        Género: 
+        <select name="genero">
+            <option value="Masculino">Masculino</option>
+            <option value="Femenino">Femenino</option>
+            <option value="Otro">Otro</option>
+        </select><br>
+        Lugar de Nacimiento: <input type="text" name="lugar_nacimiento"><br>
+        Dirección: <input type="text" name="direccion"><br>
+        Intereses/Hobbies: <textarea name="intereses"></textarea><br>
+        Comentarios: <textarea name="comentarios"></textarea><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
