@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de Edad</title>
+</head>
+<body>
+    <form action="punto1.php" method="post">
+        Nombre: <input type="text" name="nombre"><br>
+        Edad: <input type="text" name="edad"><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
