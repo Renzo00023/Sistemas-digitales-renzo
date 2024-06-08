@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultado</title>
+</head>
+<body>
+    <?php
+    $nombre = $_REQUEST["nombre"];
+    $deuda = $_REQUEST["deuda"];
+
+    echo "Nombre: " . $nombre . "<br>";
+    echo "Monto adeudado: " . $deuda . "<br>";
+    if ($deuda == ">10000") {
+        echo "Debe pagar un recargo.";
+    }
+    ?>
+</body>
+</html>
