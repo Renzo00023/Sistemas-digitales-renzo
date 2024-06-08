@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultado</title>
+</head>
+<body>
+    <?php
+    $nombre = $_REQUEST["nombre"];
+    $apellido = $_REQUEST["apellido"];
+    $edad = $_REQUEST["edad"];
+    $dni = $_REQUEST["dni"];
+    $fecha_nacimiento = $_REQUEST["fecha_nacimiento"];
+    $genero = $_REQUEST["genero"];
+    $lugar_nacimiento = $_REQUEST["lugar_nacimiento"];
+    $direccion = $_REQUEST["direccion"];
+    $intereses = $_REQUEST["intereses"];
+    $comentarios = $_REQUEST["comentarios"];
+
+    echo "Nombre: " . $nombre . "<br>";
+    echo "Apellido: " . $apellido . "<br>";
+    echo "Edad: " . $edad . "<br>";
+    echo "DNI: " . $dni . "<br>";
+    echo "Fecha de Nacimiento: " . $fecha_nacimiento . "<br>";
+    echo "Género: " . $genero . "<br>";
+    echo "Lugar de Nacimiento: " . $lugar_nacimiento . "<br>";
+    echo "Dirección: " . $direccion . "<br>";
+    echo "Intereses/Hobbies: " . $intereses . "<br>";
+    echo "Comentarios: " . $comentarios . "<br>";
+    ?>
+</body>
+</html>
