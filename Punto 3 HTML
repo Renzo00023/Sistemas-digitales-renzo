@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de Deportes</title>
+</head>
+<body>
+    <form action="punto3.php" method="post">
+        Nombre: <input type="text" name="nombre"><br>
+        Deportes que practica:<br>
+        <input type="checkbox" name="deportes[]" value="Futbol"> Futbol<br>
+        <input type="checkbox" name="deportes[]" value="Basket"> Basket<br>
+        <input type="checkbox" name="deportes[]" value="Tennis"> Tennis<br>
+        <input type="checkbox" name="deportes[]" value="Voley"> Voley<br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
